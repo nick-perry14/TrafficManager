@@ -10,7 +10,7 @@ namespace TrafficManager
     public class Main : BaseScript
     {
         private bool UsePermissions { get; }
-
+        private dynamic ESX;
         public Main()
         {
             EventHandlers["TrafficManager:CreateSpeedZone"] += new Action<Player, byte[]>(OnCreateSpeedZone);
@@ -29,6 +29,9 @@ namespace TrafficManager
 
             string usePerms = GetResourceMetadata(GetCurrentResourceName(), "use_permissions", 0) ?? "false";
             UsePermissions = usePerms.ToLower() == "true";
+            TriggerEvent("esx:getSharedObject", new object[] { new Action<dynamic>(esx => {
+            ESX = esx;
+        })});
         }
 
         private void OnCreateSpeedZone([FromSource] Player player, byte[] data)
@@ -105,9 +108,24 @@ namespace TrafficManager
 
         private bool IsPlayerAllowed(Player player)
         {
-            if (!UsePermissions) return true;
-
-            return IsPlayerAceAllowed(player.Handle, "TrafficManager.Access");
+             var xPlayer = ESX.GetPlayerFromId(player);
+             var job = xPlayer.getJob();
+             switch(job){
+                 case "police":
+                 case "offpolice":
+                 case "fire":
+                 case "offfire":
+                 case "mechanic":
+                 case "offambulance":
+                 case "ambulance":
+                 case "security":
+                 case "offsecurity":
+                 case "undpolice":
+                 case "admin":
+                 case "moderator":
+                    return true;
+             }
+             return false;
         }
 
         private bool IsConfigurationEnabled(string key)
