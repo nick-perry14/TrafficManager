@@ -108,9 +108,10 @@ namespace TrafficManager
 
         private bool IsPlayerAllowed(Player player)
         {
-             var xPlayer = ESX.GetPlayerFromId(player);
-             var job = xPlayer.getJob();
-             switch(job){
+             var xPlayer = ESX.GetPlayerFromId(player.Handle);
+            
+             var Job = xPlayer.getJob();
+            switch (Job.name){
                  case "police":
                  case "offpolice":
                  case "fire":
