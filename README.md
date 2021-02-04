@@ -2,9 +2,9 @@
 [![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/nick-perry14/TrafficManager)](#)
 [![Maintenance](https://img.shields.io/maintenance/yes/2021)](#)
 [![Repository Views](https://komarev.com/ghpvc/?username=nick-perry14-TrafficManager&label=Repository+Hits&style=flat&color=brightgreen)](#)
-[![GitHub all releases](https://img.shields.io/github/downloads/nick-perry14/TrafficManager/total)](https://github.com/nick-perry14/TrafficManager/releases)
-[![GitHub release (latest by date)](https://img.shields.io/github/v/release/nick-perry14/TrafficManager)](https://github.com/nick-perry14/TrafficManager/releases/latest)
-[![GitHub issues](https://img.shields.io/github/issues/nick-perry14/TrafficManager)](https://github.com/nick-perry14/TrafficManager/issues)
+[![GitHub all releases](https://img.shields.io/github/downloads/nick-perry14/TrafficManagerESX/total)](https://github.com/nick-perry14/TrafficManagerESX/releases)
+[![GitHub release (latest by date)](https://img.shields.io/github/v/release/nick-perry14/TrafficManagerESX)](https://github.com/nick-perry14/TrafficManagerESX/releases/latest)
+[![GitHub issues](https://img.shields.io/github/issues/nick-perry14/TrafficManagerESX)](https://github.com/nick-perry14/TrafficManagerESX/issues)
 
 - Source Code Author: DelphinusBeta
 - Edits By: Nick Pery
