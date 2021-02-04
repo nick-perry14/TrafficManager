@@ -1,7 +1,8 @@
-# TrafficManager
-**TrafficManager** is a **FiveM** resource aiming to advance the way servers handle traffic management; providing access to toggle vehicle nodes, including other essentials such as speed zones and secure zones.
+# TrafficManager ESX
+- Source Code Author: DelphinusBeta
+- Edits By: Nick Pery
 
-Join the **Discord** [HERE](https://discord.gg/QFaFZwupaE).
+**TrafficManager** is a **FiveM** resource aiming to advance the way servers handle traffic management; providing access to toggle vehicle nodes, including other essentials such as speed zones and secure zones.
 
 ## Usage
 **/trafficmenu** - Open or close the traffic menu.
@@ -11,12 +12,9 @@ Join the **Discord** [HERE](https://discord.gg/QFaFZwupaE).
 Configurations are defined within the fxmanifest.
 
 ## Permissions
-This resource is standalone from any external framework, permissions are done through ace permissions. To enable permissions set **use_permissions** to **"true"** in the fxmanifest and give the relevant player(s) **TrafficManager.Access**
+This FORKED resource is ESX dependent.  Add jobs to the fxmanifest.lua.  Each additional job should be placed on its own line with a ```job``` key 
   
 ## Source Code
 Please find the source code in the main folder. Please ensure you follow the licence in **"LICENCE.md"**. To edit the source code you require Visual Studio with .NET desktop development tools installed.
 
-## Feedback
-We appreciate feedback, bugs and suggestions related to TrafficManager and future plugins. We hope you enjoy using the resource and look forward to hearing from you!
 
-![TrafficManager](https://i.imgur.com/bXWdXeW.png)
